@@ -1,4 +1,4 @@
-
+/* Parcialmente incompleto */
 
 function adicionarFilme(){
     var filmeFavorito = document.getElementById("filme").value
