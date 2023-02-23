@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraFlix2</title>
+    <link rel="stylesheet" href="./css/aula04.css">
+</head>
+<body>
+
+    <!-- Desafios ainda não concluidos
+    1- adicionar botão para excluir filme
+    2- adicionar o nome do filme por meio de outro input (OK)
+    3- guardar tudo em array/lista -->
+
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+        <p class="page-subtitle">
+            Qual seu filme favorito?
+        </p>
+        <div class="form-wrapper">
+            <input type="text" id="nomeFilme" name="nome" placeholder="Insira o nome do filme">
+            <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+            <input type="text" id="trailer" name="trailer" placeholder="Insira endereço do trailer">
+            <button onClick="adicionarFilme()">Adicionar Filme</button>
+        </div>
+    </div>
+    <div id="listaFilmes"></div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+    <script src="./js/aula04.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+body > img {
+    margin: 0 10px;
+}
+img {
+    max-height: 350px;
+}
+p{
+    margin: auto;
+    padding-bottom: 20px;
+    color: white;
+    width: min-content;
+    display: inline-block;
+}
+p > img{
+    margin: 0px 10px;
+    width: 250px;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+.page-logo {
+    width: 200px;
+}
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.catalogo{
+    display: flex;
+    margin: auto;
+    font-size: 14px;
+}
+.tipos{
+    padding: 10px;
+}
