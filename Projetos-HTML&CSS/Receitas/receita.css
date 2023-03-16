@@ -1,0 +1,129 @@
+html,
+body {                /* mais de um elemento é separado pela virgula */
+    margin: 0;       /* tomar como costume resetar o body e o html */
+    padding: 0;     /* no caso zerar o padding e o margin        */
+}
+body {
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ff6a28;
+}
+h1 {
+    font-size: 48pxs;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 14px;
+}
+
+p, 
+li {
+    line-height: 28px;
+    /* line height é a separação entre os paragrafos
+    !!!ajustar sempre em 8px a mais do tamanho da fonte!!! */
+}
+
+
+/* CLASSES */
+
+/* classes globais */
+.text-white{
+    color: white;
+}
+
+/* header */
+.header {
+    padding: 15px;
+    background-color: #ff6a28;
+    text-align: center;
+}
+.logo {
+    margin: auto;
+    text-decoration: none;
+}
+
+.foto {
+    background: url(./Img/hero_bolo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+
+/* body */
+.body {
+    margin: auto;
+    max-width: 990px;
+    padding: 0 40px;
+    margin-top: 100px;
+}
+
+.cartao {
+    padding: 70px 100px;
+    margin-top: 50px;
+    border-radius: 50px;
+}.cartao:hover {
+    box-shadow: 8px 8px 15px 12px #80808080;
+}
+.lista-ingredientes {
+    margin-bottom: 50px;
+    /* issaq serviu pra fazer o botao ser ajustado pra baixo */
+}
+.ingredientes {
+    cursor: url("./Img/cursor_ingredientes.png"), auto;
+}
+.botao-comprar {
+    background-color: #ff6a28;
+    margin: 18px;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.preparo {
+    cursor: url("./Img/cursor_preparo.png"), auto;
+}
+
+.instrucoes{
+    cursor: url("./Img/cursor_intrucoes.png"), auto;
+}
+
+
+
+
+/* footer = rodapé */
+.footer {
+    margin-top: 50px;
+    background-color: #ff6929;
+    color: white;
+    /* a cor branca n vai herdar para o link da tag 'a' pq a prioridade é o q vem declarado dentro da propria tag 
+    e dps ele verifica algumas informações adicionais nos elementos acima 
+    
+    como por exemplo os tamanhos(padding, margin...) 
+    como dentro da tag 'a' n tem nada declarado
+    sobre ele vai pegar oq tiver sobre nos elementos acima*/
+}
+.p-footer {
+    padding: 15px;
+    /* LEMBRAR DE TENTAR SEMPRE AJUSTAR A CENTRALIZAAÇÃO COM O PADDING */
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}

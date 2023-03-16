@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Sistema de multa</h1>
+    <label>Velocidade do carro: </label>
+    <input type="number" name="txtvel" id="txtvel" placeholder="60Km/h">Km/h
+    <input type="button" value="Verificar" onclick="verificar1()">
+    <div id="res1"></div>
+
+    <h1>Nacionalidade</h1>
+    <label>Sua Nacionalidade: </label>
+    <input type="text" name="txtpais" id="txtpais" placeholder="Brasil...">
+    <input type="button" value="Verificar" onclick="verificar2()">
+    <div id="res2"></div>
+
+    <script>
+        function verificar1(){
+            var txtv = document.getElementById('txtvel').value
+            let res = document.getElementById('res1')
+            var vel = Number(txtv)
+
+            res.innerHTML = `<p>Sua velocidade é de <b>${vel}Km/h</b></p>`
+            if (vel > 60){
+                res.innerHTML += `<p>Voce está acima da velocidade permitida. <br>`
+                res.innerHTML += `Voce foi <b>MULTADO</b> por excesso de velocidade</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>`
+        }
+
+        function verificar2(){
+            var txtp = document.querySelector('#txtpais').value
+            let res = document.querySelector('#res2')
+            var pais = txtp.toLowerCase()
+            var paisM = pais[0].toUpperCase() + pais.substring(1)
+
+            res.innerHTML = `<p>Sua nacionalidade é <b>${paisM}</b></p>`
+
+            if (pais == 'brasil'){
+                res.innerHTML += `<p>Então voce é <b>Brasileiro</b></p>`
+            }else{
+                res.innerHTML += `<p>Então voce é <b>Estrangeiro</b></p>`
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>

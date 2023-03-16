@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fd8a24;
+    font-weight: bold;
+}
+h1, h2{
+    color: #111;
+}
+h3{
+    color: orange;   
+}
+p{
+    font-size: 20px;
+    line-height: 32px;
+}
+figure{
+    margin: 40px 0;
+    padding: 0;
+    font-size: 12px;
+}figure>img{
+    width: 100%;
+}
+ol{
+    margin: 0;
+    padding: 0;
+}
+li{
+    color: #111;
+    font-size: 32px;
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+.top-bar{
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 5px solid orange ;
+    padding: 5px;
+}
+.container{
+    margin: auto;
+    max-width: 888px;
+    padding: 30px;
+}
+.social-icons{
+    margin-top: 10px;
+}
+.social-icon{
+    width: 20px;
+    padding: 10px 10px 10px 0;
+}
+.content{
+    margin: auto;
+    width: 648px;
+}
+.cta{
+    font-size: 20px;
+    margin: 30px 0;
+}
+.footer{
+    background-color: #333;
+    padding: 20px;
+}
+
+#titulo{
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px; /* por padrao é 8 a mais doq a font */
+/*     margin-bottom: 25px; */
+}
+#sub-titulo{
+    font-weight: normal;
+    font-size: 20px;
+}
+#autor{
+    font-weight: bold;
+    font-size: 12px;
+}
