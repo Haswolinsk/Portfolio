@@ -1,0 +1,121 @@
+:root{
+    --card-color-1: hsl(31, 77%, 52%);
+    --card-color-2: hsl(184, 100%, 22%);
+    --card-color-3: hsl(179, 100%, 13%);
+    --color: hsl(0, 0%, 95%);
+    --color-p: hsla(0, 0%, 100%, 0.75);
+}
+html,
+body{
+    background-color: var(--color);
+    color: var(--color);
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1{
+    font-size: 38px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    color: var(--color-p);
+    height: 50%;
+}
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--color);
+    width: 140px;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 30px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 98vh;
+}
+.card{
+    height: 550px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    line-height: 26px;
+}
+.align-card{
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.color1{
+    background-color: var(--card-color-1);
+    border-radius: 10px 0 0 10px;
+}
+.color2{
+    background-color: var(--card-color-2);
+}
+.color3{
+    background-color: var(--card-color-3);
+    border-radius: 0 10px 10px 0;
+}
+.text1{
+    color: var(--card-color-1);
+}
+.text2{
+    color: var(--card-color-2);
+}
+.text3{
+    color: var(--card-color-3);
+}
+.attribution{
+    position: fixed;
+    inset: auto 0 0 0;
+    font-size: 11px; 
+    text-align: center;
+    color: black;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 1050px){
+    h1{
+        margin-top: 35px;
+    }
+    p{
+        height: 130px;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card{
+        height: 100%;
+    }
+    .align-card{
+        height: 350px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 38px;
+    }
+    .color1{
+        border-radius: 10px 10px 0 0;
+    }
+    .color3{
+        border-radius: 0 0 10px 10px;
+    }
+    .attribution{
+        position: relative;
+    }
+}
