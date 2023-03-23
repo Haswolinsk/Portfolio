@@ -5,6 +5,7 @@
     --color: hsl(0, 0%, 95%);
     --color-p: hsla(0, 0%, 100%, 0.75);
 }
+
 html,
 body{
     background-color: var(--color);
@@ -26,8 +27,11 @@ button{
     padding: 15px 30px;
     border: 0;
     border-radius: 30px;
+}button:hover{
+    border: 2px solid var(--color);
+    color: var(--color);
+    background: transparent;
 }
-
 
 .container{
     display: flex;
