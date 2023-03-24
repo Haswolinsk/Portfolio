@@ -1,0 +1,137 @@
+:root{
+    --color-background: hsl(225, 100%, 94%);
+    --color-background-plan: hsl(225, 100%, 98%);
+    --color-header: hsl(223, 47%, 23%);
+    --color-text: hsl(224, 23%, 55%);
+    --color-btn: hsl(245, 75%, 52%);
+}
+
+html,
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--color-background);
+    background-image:url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+img{
+    border-radius: 15px 15px 0 0;
+}
+h1{
+    margin: 15px !important;
+    font-weight: 900;
+}
+h1, h3{
+    margin: 0;
+    color: var(--color-header);
+}
+p{
+    margin: 0;
+    color: var(--color-text);
+    font-size: 16px;
+}
+a{
+    margin-left: auto;
+}a:hover{
+    text-decoration: none;
+    color: var(--color-text);
+}
+button{
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 10px 5px;
+    margin: 5px 0;
+    width: 100%;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+}
+.align{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    padding: 30px 50px;
+    border-radius: 0 0 15px 15px;
+}
+.plan{
+    background-color: var(--color-background-plan);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+    margin: 20px 0;
+    width: 85%;
+    border-radius: 10px;
+}
+.align2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.btn-1{
+    color: var(--color-background-plan);
+    background-color: var(--color-btn);
+    border: 0;
+}.btn-1:hover{
+    cursor: pointer;
+    background-color: var(--color-text);
+}
+.btn-2{
+    color: var(--color-text);
+    background-color: transparent;
+    border: 0;
+}.btn-2:hover{
+    cursor: pointer;
+    color: var(--color-header);
+}
+.attribution{
+    position: fixed;
+    inset: auto 0 0 0;
+    font-size: 11px; 
+    text-align: center;
+    color: black;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 800px) {
+    html,
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    img{
+        width: 335px;
+    }
+    h1{
+        font-size: 24px;
+    }
+
+    .align{
+        width: 275px;
+        padding: 20px 30px;
+    }
+    .plan{
+        width: 90%;
+        padding: 15px;
+        font-size: 14px;
+    }
+    .plan > img{
+        width: auto;
+    }
+    .align2{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+}
